@@ -5,10 +5,23 @@ updates:
     target-branch: "dev"
     schedule:
       interval: "daily"
-      time: "16:50"
+      time: "15:05"
+    groups:
+      pip-security-updates:
+        applies-to: security-updates
+        patterns:
+          - "*"
+      pip-version-updates:
+        applies-to: version-updates
+        patterns:
+          - "*"
   - package-ecosystem: "github-actions"
     directory: "/"
     target-branch: "dev"
     schedule:
       interval: "daily"
-      time: "16:50"
+      time: "15:05"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
