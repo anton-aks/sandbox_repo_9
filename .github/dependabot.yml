@@ -5,7 +5,7 @@ updates:
     target-branch: "dev"
     schedule:
       interval: "daily"
-      time: "15:30"
+      time: "16:00"
     groups:
       pip-security-updates:
         applies-to: security-updates
@@ -20,7 +20,7 @@ updates:
     target-branch: "dev"
     schedule:
       interval: "daily"
-      time: "15:30"
+      time: "16:00"
     groups:
       github-actions:
         patterns:
