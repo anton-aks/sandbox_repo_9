@@ -1,0 +1,10 @@
+# vulnerable
+requests==2.3.0
+flask==2.0.1
+
+# outdated
+pandas==2.3.0
+testcontainers==4.8.0
+
+# other
+pip-audit==2.9.0
