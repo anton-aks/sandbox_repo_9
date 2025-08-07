@@ -2,17 +2,12 @@ version: 2
 updates:
   - package-ecosystem: "pip"
     directory: "/"
-    target-branch: "dev"
     schedule:
       interval: "daily"
-      time: "16:00"
+      time: "18:00"
+    target-branch: "dev"
     groups:
-      pip-security-updates:
-        applies-to: security-updates
-        patterns:
-          - "*"
-      pip-version-updates:
-        applies-to: version-updates
+      pip-dependencies:
         patterns:
           - "*"
   - package-ecosystem: "github-actions"
